@@ -1,0 +1,9 @@
+services:
+  node:
+    container_name: ${COMPOSE_PROJECT_NAME}_node
+    build:
+      context: .
+      args:
+        USER_ID: ${UID}
+    volumes:
+      - ./app:/app
