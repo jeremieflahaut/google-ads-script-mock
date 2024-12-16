@@ -3,17 +3,11 @@ import Spreadsheet from "./Spreadsheet";
 export default class SpreadsheetApp {
     private static spreadsheets: { [key: string]: Spreadsheet } = {};
 
-    static init(mockSpreadsheets: { id: string; sheets: { name: string; data: any[][] }[] }[]): void {
+    static init(spreadsheetsMock: { id: string; spreadsheet: Spreadsheet }[]): void {
         this.spreadsheets = {};
 
-        mockSpreadsheets.forEach(mockSpreadsheet => {
-            const spreadsheet = new Spreadsheet();
-
-            mockSpreadsheet.sheets.forEach(sheet => {
-                spreadsheet.addSheet(sheet.name, sheet.data);
-            });
-
-            this.spreadsheets[mockSpreadsheet.id] = spreadsheet;
+        spreadsheetsMock.forEach(({ id, spreadsheet }) => {
+            this.spreadsheets[id] = spreadsheet;
         });
     }
 

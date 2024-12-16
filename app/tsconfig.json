@@ -1,17 +1,24 @@
 {
   "compilerOptions": {
-    "module": "commonjs",             // Compatible avec Node.js
-    "target": "ES2020",               // Niveau JavaScript généré
-    "strict": true,                   // Activer le mode strict
-    "esModuleInterop": true,          // Pour les modules CommonJS
-    "moduleResolution": "node",       // Résolution des modules Node.js
-    "outDir": "./dist",               // Dossier de sortie des fichiers JS compilés
-    "rootDir": "./src",                // Répertoire source
+    "module": "commonjs", // Compatible avec Node.js
+    "target": "ES2020", // Niveau JavaScript généré
+    "strict": true, // Activer le mode strict
+    "esModuleInterop": true, // Pour les modules CommonJS
+    "moduleResolution": "node", // Résolution des modules Node.js
+    "outDir": "./dist", // Dossier de sortie des fichiers JS compilés
+    "rootDir": "./src", // Répertoire source
     "baseUrl": "./",
     "paths": {
-      "@mocks/*": ["src/mocks/*"]   // Définit l'alias @mocks pour le dossier des mocks
-    }       
+      "@mocks/*": [
+        "src/class/*"
+      ] // Définit l'alias @mocks pour le dossier des mocks
+    }
   },
-  "include": ["src/**/*"],            // Inclure tous les fichiers TypeScript dans src/
-  "exclude": ["node_modules", "dist"] // Exclure node_modules et dist
+  "include": [
+    "src/**/*"
+  ], // Inclure tous les fichiers TypeScript dans src/
+  "exclude": [
+    "node_modules",
+    "dist"
+  ] // Exclure node_modules et dist
 }

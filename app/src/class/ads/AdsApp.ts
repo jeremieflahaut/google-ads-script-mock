@@ -8,12 +8,12 @@ export default class AdsApp {
     private static mockCampaigns: Campaign[] = [];
     private static mockAdgroups: AdGroup[] = [];
 
-    static initCampaigns(mockCampaigns: Campaign[]): void {
-        this.mockCampaigns = mockCampaigns;
+    static initCampaigns(CampaignsMock: Campaign[]): void {
+        this.mockCampaigns = CampaignsMock;
     }
 
-    static initAdGroups(adGroups: AdGroup[]): void {
-        this.mockAdgroups = adGroups;
+    static initAdGroups(adGroupsMock: AdGroup[]): void {
+        this.mockAdgroups = adGroupsMock;
     }
 
     static campaigns(): CampaignSelector {
