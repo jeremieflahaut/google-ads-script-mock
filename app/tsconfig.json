@@ -6,7 +6,11 @@
     "esModuleInterop": true,          // Pour les modules CommonJS
     "moduleResolution": "node",       // Résolution des modules Node.js
     "outDir": "./dist",               // Dossier de sortie des fichiers JS compilés
-    "rootDir": "./src"                // Répertoire source
+    "rootDir": "./src",                // Répertoire source
+    "baseUrl": "./",
+    "paths": {
+      "@mocks/*": ["src/mocks/*"]   // Définit l'alias @mocks pour le dossier des mocks
+    }       
   },
   "include": ["src/**/*"],            // Inclure tous les fichiers TypeScript dans src/
   "exclude": ["node_modules", "dist"] // Exclure node_modules et dist

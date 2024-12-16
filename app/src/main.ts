@@ -1,1 +1,0 @@
-console.log('TypeScript avec Docker fonctionne !');
