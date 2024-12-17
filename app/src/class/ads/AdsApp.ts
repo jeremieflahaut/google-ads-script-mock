@@ -1,5 +1,5 @@
-import AdGroup from "./adGrouos/AdGroup";
-import AdGroupSelector from "./adGrouos/AdGroupSelector";
+import AdGroup from "./adGroups/AdGroup";
+import AdGroupSelector from "./adGroups/AdGroupSelector";
 import Campaign from "./campaigns/Campaign";
 import CampaignSelector from "./campaigns/CampaignSelector";
 

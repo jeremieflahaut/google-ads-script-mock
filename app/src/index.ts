@@ -1,8 +1,8 @@
-import SpreadsheetApp from "@mocks/spreadSheets/SpreadsheetApp";
-import AdsApp from "./class/ads/AdsApp";
-import adGroupsMock from "./mocks/AdGroupsMock";
-import campaignsMock from "./mocks/CampaignsMock";
-import spreadsheetsMock from "./mocks/SpreadSheetsMock";
+import SpreadsheetApp from "@class/spreadSheets/SpreadsheetApp";
+import AdsApp from "@class/ads/AdsApp";
+import adGroupsMock from "@mocks/AdGroupsMock";
+import campaignsMock from "@mocks/CampaignsMock";
+import spreadsheetsMock from "@mocks/SpreadSheetsMock";
 
 AdsApp.initCampaigns(campaignsMock);
 AdsApp.initAdGroups(adGroupsMock);
@@ -17,7 +17,6 @@ SpreadsheetApp.init(spreadsheetsMock)
 const CONFIG = {};
 
 function main() {
-
 
 }
 

@@ -9,16 +9,10 @@
     "rootDir": "./src", // Répertoire source
     "baseUrl": "./",
     "paths": {
-      "@mocks/*": [
-        "src/class/*"
-      ] // Définit l'alias @mocks pour le dossier des mocks
+      "@class/*": ["src/class/*"],
+      "@mocks/*": ["src/mocks/*"]
     }
   },
-  "include": [
-    "src/**/*"
-  ], // Inclure tous les fichiers TypeScript dans src/
-  "exclude": [
-    "node_modules",
-    "dist"
-  ] // Exclure node_modules et dist
+  "include": ["src/**/*"], // Inclure tous les fichiers TypeScript dans src/
+  "exclude": ["node_modules", "dist"] // Exclure node_modules et dist
 }

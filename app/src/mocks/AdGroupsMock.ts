@@ -1,4 +1,4 @@
-import AdGroup from "../class/ads/adGrouos/AdGroup";
+import AdGroup from "../class/ads/adGroups/AdGroup";
 
 const adGroupsMock = [
     new AdGroup(1, 'Ad Group 1', 'SEARCH'),
